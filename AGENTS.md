@@ -48,6 +48,15 @@ pre-commit run --all-files                           # Lint + format (ruff, typo
 - **`benchmarks/`** — Performance benchmarking scripts.
 - **Root files**: `pyproject.toml` (single source of truth for deps, build, tool config), `Makefile` (E2E test targets), `uv.lock`, `CONTRIBUTING.md` & `README.md` (general information).
 
+## Pull Request Conventions
+
+- **Title**: Use the format `<Functionality>: Title In Title Case` (e.g. `Docs: Add Local Hardware Setup Instructions`). The title text must be in Title Case.
+- **Description**: Write a descriptive summary using the following headings, in order:
+  - **Overview** — what this PR does.
+  - **Why** — the motivation or problem being addressed.
+  - **Solution** — how the change works / the approach taken.
+  - **Tests** — how the change was tested or verified.
+
 ## Notes
 
 - **Mypy is gradual**: strict only for `lerobot.envs`, `lerobot.configs`, `lerobot.optim`, `lerobot.model`, `lerobot.cameras`, `lerobot.motors`, `lerobot.transport`. Add type annotations when modifying these modules.
